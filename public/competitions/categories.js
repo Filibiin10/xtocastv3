@@ -8,7 +8,7 @@ async function fetchCategories(eventId) {
         const vote = eventData.vote_cost
         const name = eventData.name
 
-        const categoryResponse = await fetch(`/api/eventid/${eventId}`
+        const categoryResponse = await fetch(`api/eventid/${eventId}`
           ); // Update API URL as needed
           const categoryData = await categoryResponse.json();
           const catId = categoryData.id
