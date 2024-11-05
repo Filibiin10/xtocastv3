@@ -9,7 +9,7 @@ async function fetchCategories(eventId) {
         const name = eventData.name
 
         const categoryResponse = await fetch(
-            `http://localhost:7000/api/eventid/${eventId}`
+            `/api/eventid/${eventId}`
           ); // Update API URL as needed
           const categoryData = await categoryResponse.json();
           const catId = categoryData.id
