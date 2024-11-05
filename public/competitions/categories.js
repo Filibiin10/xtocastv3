@@ -16,7 +16,7 @@ async function fetchCategories(eventId) {
       
           
 
-        const nomineeResponse = await fetch(`http://localhost:7000/api/nominees`); // Update API URL as needed
+        const nomineeResponse = await fetch(`/api/nominees`); // Update API URL as needed
         const nomiData = await nomineeResponse.json();
 
         const filteredNominees = nomiData.filter(nominee => nominee.category_id === catId);
@@ -27,7 +27,7 @@ async function fetchCategories(eventId) {
 
 
     const response = await fetch(
-      `http://localhost:7000/api/categories?eventId=${eventId}`
+      `/api/categories?eventId=${eventId}`
     ); // Update API URL as needed
     const categories = await response.json();
 
