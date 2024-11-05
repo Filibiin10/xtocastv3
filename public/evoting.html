@@ -176,7 +176,7 @@
 			  <script>
 				async function fetchEvents() {
 				  try {
-					const response = await fetch('/api/events');
+					const response = await fetch('http:/localhost:7000/api/events');
 					const events = await response.json();
 					
 					// Get the container for the competition list
