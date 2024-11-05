@@ -24,7 +24,7 @@ const app = express();
 const PORT = 7000;
 app.use(bodyParser.json({ limit: '10mb' })); // Set limit to 10MB, adjust as needed
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
-app.use(cors({ origin: '*', credentials: true, 
+app.use(cors({ origin: 'http://localhost:7000', credentials: true, 
     methods:  ['GET', 'POST', 'PUT', 'DELETE']
  }));
 
